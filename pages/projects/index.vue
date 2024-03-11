@@ -6,12 +6,7 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('pr
     <main>
         <h1>Projects</h1>
         <div v-for="project in projects">
-            <NuxtLink :to="project._path">
-                <h3>{{ project.title }}</h3>
-                <NuxtImg v-if="doc.image" :src="`/images/projects/${doc.image}`" sizes="100vw md:448px" />
-                <p v-show="project.description">{{ project.description }}</p>
-                <p>Read more...</p>
-            </NuxtLink>
+            <ProjectItem :project="project" />
         </div>
     </main>
 </template>
