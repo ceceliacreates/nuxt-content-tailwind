@@ -6,7 +6,7 @@ const { data: projects } = await useAsyncData('projects', () => queryContent('pr
     <main>
         <h1>Projects</h1>
         <div v-for="project in projects">
-            <ProjectItem :project="project" />
+            <Item :item="project" type="projects" />
         </div>
     </main>
 </template>
