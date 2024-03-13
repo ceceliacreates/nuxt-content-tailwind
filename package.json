@@ -12,6 +12,9 @@
     "nuxt": "^3.10.3"
   },
   "devDependencies": {
-    "@nuxt/image": "^1.4.0"
+    "@nuxt/image": "^1.4.0",
+    "@nuxtjs/tailwindcss": "^6.11.4",
+    "@tailwindcss/typography": "^0.5.10",
+    "nuxt-icon": "^0.6.9"
   }
 }
