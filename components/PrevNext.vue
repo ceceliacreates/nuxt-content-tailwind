@@ -16,21 +16,20 @@ const [prevResult, nextResult] = await queryContent()
     .sort({ date: -1})
     .findSurround(path.value);
 
-  prev.value = prevResult;
-  next.value = nextResult;
-
+  prev.value = prevResult._path.includes('blog') ? prevResult : null;
+  next.value = nextResult._path.includes('blog') ? nextResult : null;
 </script>
 
 <template>
-    <p class="">Explore more posts...</p>
-    <div class="">
-      <div class="">
-        <p class="" v-if="prev">{{ prev.title }}</p>
-        <NuxtLink v-if="prev" :href="prev._path">⬅️</NuxtLink>
+    <p class="text-center font-bold my-4 border-t py-2">Explore more posts...</p>
+    <div class="flex justify-between">
+      <div class="text-left max-w-sm">
+        <p class="italic mb-2" v-if="prev">{{ prev.title }}</p>
+        <ButtonLink v-if="prev"  icon="fa6-solid:arrow-left" color="bg-purple" :href="prev._path" />
       </div>
-      <div class="text-right">
+      <div class="text-right max-w-sm">
         <p v-if="next" class="italic mb-2">{{ next.title }}</p>
-        <NuxtLink v-if="next" :href="next._path" >➡️</NuxtLink>
+        <ButtonLink v-if="next" icon="fa6-solid:arrow-right" color="bg-purple" :href="next._path" />
       </div>
     </div>
 </template>

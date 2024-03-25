@@ -1,6 +1,8 @@
 <template>
-  <div class="bg-gradient-to-r from-[#cdffd8] to-[#94b9ff] min-h-screen">
+  <div class="min-h-screen bg-white">
     <NavBar />
-    <NuxtPage />
+    <div class="mx-auto px-4 pb-8 sm:max-w-4xl">
+      <NuxtPage/>
+    </div>
   </div>
 </template>
