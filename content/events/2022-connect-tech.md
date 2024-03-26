@@ -11,5 +11,4 @@ video:
 slides: https://slides.com/ceceliamartinez/debugging-with-js-frameworks
 tags: ["debugging", "react", "vue"]
 ---
-
-:event
+event

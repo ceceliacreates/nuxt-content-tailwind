@@ -3,8 +3,7 @@
 module.exports = {
   theme: {
     colors: {
-      'sea': '#cdffd8',
-      'sky': '#94b9ff',
+      'sky': '#bfe1fe',
       'white': '#fdfdfd',
       'black': '#201726',
       'purple': '#5317eb',

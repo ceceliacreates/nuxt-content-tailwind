@@ -10,3 +10,4 @@ video:
 slides: https://docs.google.com/presentation/d/e/2PACX-1vQ89vv_X7xhKw__mvMRs2J-27hActuP4kM5lGCuq3Iv7Wz9vojY-_P_L_Apo0ibV_7T7WUtpYUP4Q3d/pub
 tags: ["mobile", "devops"]
 ---
+event

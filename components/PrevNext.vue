@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const props = defineProps({
   path: {
     type: String,
@@ -11,13 +11,16 @@ const { path } = toRefs(props)
 const prev = ref(null);
 const next = ref(null);
 
-const [prevResult, nextResult] = await queryContent()
+const [prevResult, nextResult] = await queryContent('blog')
     .only(['_path', 'title'])
     .sort({ date: -1})
     .findSurround(path.value);
 
-  prev.value = prevResult._path.includes('blog') ? prevResult : null;
-  next.value = nextResult._path.includes('blog') ? nextResult : null;
+  console.log(prevResult, nextResult)
+  console.log(path.value)
+
+  prev.value = prevResult;
+  next.value = nextResult;
 </script>
 
 <template>

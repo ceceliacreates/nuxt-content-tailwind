@@ -8,7 +8,7 @@ url: https://chainreactconf.com/
 img: 
 embed: uiu_hqXoHpA
 video: 
-slides: https://ionic.link/3pR5SBs
+slides: https://www.canva.com/design/DAFii9v57Ts/2zAfmX8T1jKxzSPrdqZuUA/view?utm_content=DAFii9v57Ts&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 tags: ["react native", "mobile"]
 ---
-:event
+event

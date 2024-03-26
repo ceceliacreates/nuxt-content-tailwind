@@ -11,5 +11,4 @@ video:
 slides: https://slides.com/ceceliamartinez/time-travel-debugging
 tags: ["debugging"]
 ---
-
-:event
+event

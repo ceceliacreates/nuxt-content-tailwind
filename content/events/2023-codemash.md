@@ -8,8 +8,7 @@ url: https://www.codemash.org/session-details/?id=381056
 img: /codemash-2023.jpeg
 embed:
 video:
-slides:
+slides: https://www.canva.com/design/DAFXbnWrmzQ/f9ETL0ehZCMAQYzJDxRjBg/view?utm_content=DAFXbnWrmzQ&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
 tags: ["testing"]
 ---
-
-:event
+event

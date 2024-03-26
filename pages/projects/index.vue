@@ -1,4 +1,4 @@
-<script setup>
+<script setup lang="ts">
 const { data: projects } = await useAsyncData('projects', () => queryContent('projects').sort({date: -1}).find())
 </script>
 

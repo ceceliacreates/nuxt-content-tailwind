@@ -11,5 +11,4 @@ video:
 slides: https://slides.com/ceceliamartinez/no-code-oss-contributions
 tags: ["oss", "community", "diversity"]
 ---
-
-:event
+event

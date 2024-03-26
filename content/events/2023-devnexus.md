@@ -11,5 +11,4 @@ video:
 slides:
 tags: ["ci/cd", "cross-platform", "cloud"]
 ---
-
-:event
+event

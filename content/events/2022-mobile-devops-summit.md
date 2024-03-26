@@ -8,8 +8,6 @@ url: https://www.mobiledevops.io/summit/agenda/session/1023764
 img:
 embed: NUG8sF5IALM
 video: https://www.youtube.com/watch?v=NUG8sF5IALM
-slides: https://ionic.link/3GvpZuB
 tags: ["mobile", "devops", "cicd"]
 ---
-
-:event
+event
