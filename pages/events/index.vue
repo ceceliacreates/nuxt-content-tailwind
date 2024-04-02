@@ -7,19 +7,19 @@ const selectedTag = ref('')
 
 const { data: events } = await useAsyncData<Event[]>('events', () => queryContent('events').where({ _empty: { $ne: true }}).sort({date: -1}).find())
 
-const filteredEvents: Event[] = computed(() => 
+const filteredEvents = computed(() => 
     events.value?.filter(event => event.tags?.includes(selectedTag.value))
   )
 
-const displayedEvents: Event[] = computed(()=> 
+const displayedEvents = computed(()=> 
     selectedTag.value ? filteredEvents.value : events.value
   ) 
 
-const upcomingEvents: Event[] = computed(() => 
+const upcomingEvents = computed(() => 
   displayedEvents.value?.filter(event => event.date > currentDate)
 )
 
-const pastEvents: Event[] = computed(() => 
+const pastEvents = computed(() => 
   displayedEvents.value?.filter(event => event.date < currentDate)
 )
 
