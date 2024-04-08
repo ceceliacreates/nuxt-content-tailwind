@@ -14,6 +14,7 @@ export interface Blog extends MarkdownParsedContent {
   date: string;
   img?: string;
   tags: string[];
+  externalUrl?: string;
 }
 
 export interface Event extends MarkdownParsedContent {
