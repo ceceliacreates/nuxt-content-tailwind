@@ -7,7 +7,7 @@ tags: [devrel, career]
 
 On August 29, 2022 I started my first day as a Developer Advocate for Ionic. The very next day I flew out to Salt Lake City to meet my team for ng-Conf, and it's been a whirlwind ever since! 🌪️
 
-![Me on stage at Chain React](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/ba27dgmkfn3b83fr8zu1.jpeg)
+![Me on stage at Chain React](/images/chainreact.JPG)
 
 *Speaking on stage at Chain React! Photo credit: [Taz Singh](https://twitter.com/tazsingh)*
 
@@ -60,7 +60,7 @@ I was also involved in other events, either as a sponsor, on the program committ
 
 React Rally was the first sponsored event where I was the lead on site. We also hosted an Ionic Utah meetup at the conference. It was a lot of work but so much fun to own the entire process and introduce our newer team members to sponsor booth life. 😅
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/x47crj4dzglvyk8osvjg.jpeg)
+![Developer Advocate Logan Brade at the sponsor booth at React Rally](/images/blog/ionic-booth.jpeg)
 
 *Developer Advocate Logan Brade at the sponsor booth at React Rally!*
 
@@ -116,7 +116,7 @@ I am the first Developer Advocate at Ionic focused specifically on Appflow, our 
 
 Because of this, I was responsible for a lot of "firsts", including deciding how we would reach developers in these new markets, as well as the sponsor booth strategy for events sponsored under the Appflow brand. It was a crash course in developing a new DevRel strategy! 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8s4zsueg8mjanuknuv2c.jpeg)
+![New booth design assets for Appflow-sponsored events](/images/blog/appflow-booth.jpeg)
 
 *New booth design assets for Appflow-sponsored events!*
 
@@ -140,7 +140,7 @@ I have previously volunteered with Women Who Code Front End, but this year I tra
 
 I got to meet some of the members at Deep Dish Swift, including [Vui Nguyen](https://twitter.com/sunfishgurl), who gave a great talk at the conference. She is now the Leadership Fellow for Women Who Code Mobile and I look forward to doing more work with them this year!
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/wqjnw8840rpegpjnuya7.jpeg)
+![Women Who Code Mobile representing at Deep Dish Swift](/images/blog/wwc-mobile.jpeg)
 
 *Women Who Code Mobile representing at Deep Dish Swift! Photo credit: [@sunfishgirl on Twitter](https://twitter.com/sunfishgurl/status/1652855892365443072/photo/1)*
 
