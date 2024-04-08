@@ -30,9 +30,17 @@ const loadMoreEvents = () => {
 
   maxEvents.value += 5;
 
-  atEnd.value =  displayedEvents.value?.filter(event => event.date < currentDate).length >= maxEvents.value ? true : false;
+  atEnd.value =  displayedEvents.value?.filter(event => event.date < currentDate).length > maxEvents.value ? false : true;
+
+  console.log(atEnd.value)
+console.log(displayedEvents.value?.filter(event => event.date < currentDate).length)
+console.log(maxEvents.value)
 
 }
+
+console.log(atEnd.value)
+console.log(displayedEvents.value?.filter(event => event.date < currentDate).length)
+console.log(maxEvents.value)
 </script>
 
 <template>

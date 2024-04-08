@@ -2,15 +2,28 @@
 import type { Blog } from "~~/types";
 
 const selectedTag = ref('')
+
+const maxPosts = ref(5)
+
+const atEnd = ref(false)
+
 const { data: posts } = await useAsyncData<Blog[]>('posts', () => queryContent('blog').sort({date: -1}).find())
 
-const filteredPosts: Blog[] = computed(() => 
+const filteredPosts = computed(() => 
     posts.value?.filter(post => post.tags?.includes(selectedTag.value))
   )
 
-  const displayedPosts: Blog[] = computed(()=> 
-    selectedTag.value ? filteredPosts.value : posts.value
+  const displayedPosts = computed(()=> 
+    selectedTag.value ? filteredPosts.value.slice(0, maxPosts.value) : posts.value?.slice(0, maxPosts.value)
   ) 
+
+const loadMorePosts = () => {
+
+maxPosts.value += 5;
+
+atEnd.value =  displayedPosts.value?.length > maxPosts.value ? false : true;
+
+}
 </script>
 
 <template>
@@ -22,6 +35,10 @@ const filteredPosts: Blog[] = computed(() =>
       </div>
         <div v-for="post in displayedPosts">
             <Item :item="post" section="blog" @update-selected-tag="(tag) => selectedTag = tag" />
+        </div>
+        <div class="text-center">
+          <p class="italic font-light" v-if="atEnd">End of posts</p>
+          <button class="bg-blue text-white px-4 py-2" v-else @click="loadMorePosts">Load More</button>
         </div>
     </main>
 </template>
