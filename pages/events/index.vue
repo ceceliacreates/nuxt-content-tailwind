@@ -5,14 +5,17 @@ const currentDate = new Date().toISOString();
 
 const selectedTag = ref('')
 
+const maxEvents = ref(5)
+
+const atEnd = ref(false)
+
 const { data: events } = await useAsyncData<Event[]>('events', () => queryContent('events').where({ _empty: { $ne: true }}).sort({date: -1}).find())
 
-const filteredEvents = computed(() => 
-    events.value?.filter(event => event.tags?.includes(selectedTag.value))
-  )
+const displayedEvents = computed(()=>  {
+  const eventsToDisplay = selectedTag.value ? events.value?.filter(event => event.tags?.includes(selectedTag.value)) : events.value;
 
-const displayedEvents = computed(()=> 
-    selectedTag.value ? filteredEvents.value : events.value
+  return eventsToDisplay
+}
   ) 
 
 const upcomingEvents = computed(() => 
@@ -20,9 +23,16 @@ const upcomingEvents = computed(() =>
 )
 
 const pastEvents = computed(() => 
-  displayedEvents.value?.filter(event => event.date < currentDate)
+  displayedEvents.value?.filter(event => event.date < currentDate).slice(0, maxEvents.value)
 )
 
+const loadMoreEvents = () => {
+
+  maxEvents.value += 5;
+
+  atEnd.value =  displayedEvents.value?.filter(event => event.date < currentDate).length >= maxEvents.value ? true : false;
+
+}
 </script>
 
 <template>
@@ -40,6 +50,10 @@ const pastEvents = computed(() =>
         <h3 class="text-3xl text-purple my-4">Past</h3>
         <div v-for="event in pastEvents">
             <Item :item="event" section="events" @update-selected-tag="(tag) => selectedTag = tag" />
+        </div>
+        <div class="text-center">
+          <p class="italic font-light" v-if="atEnd">End of events</p>
+          <button class="bg-blue text-white px-4 py-2" v-else @click="loadMoreEvents">Load More</button>
         </div>
     </main>
 </template>
