@@ -16,9 +16,6 @@ const [prevResult, nextResult] = await queryContent('blog')
     .sort({ date: -1})
     .findSurround(path.value);
 
-  console.log(prevResult, nextResult)
-  console.log(path.value)
-
   prev.value = prevResult;
   next.value = nextResult;
 </script>

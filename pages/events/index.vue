@@ -14,7 +14,9 @@ const filteredEvents = computed(() =>
 ) 
 
 const upcomingEvents = computed(() => 
-  filteredEvents.value?.filter(event => event.date > currentDate)
+  filteredEvents.value?.filter(event => event.date > currentDate).sort((a, b) => {
+ return new Date(a.date) - new Date(b.date)
+  } )
 )
 
 const pastEvents = computed(() => 

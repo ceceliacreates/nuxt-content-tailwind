@@ -28,15 +28,7 @@ const loadMorePosts = () => {
 
   maxPosts.value += 5;
 
-  console.log(atEnd.value)
-  console.log(filteredPosts.value?.length)
-  console.log(maxPosts.value)
-
 }
-
-console.log(atEnd.value)
-console.log(filteredPosts.value?.length)
-console.log(maxPosts.value)
 </script>
 
 <template>

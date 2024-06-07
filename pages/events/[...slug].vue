@@ -9,6 +9,7 @@
     day: 'numeric',
   }) }} (<NuxtLink class="text-blue" :to="doc.url" v-show="doc.url" target="blank" external><Icon name="heroicons-outline:external-link" size="1rem" /> More Details</NuxtLink>)</p>
         <h3 class="text-lg italic my-2">"{{  doc.title }}"</h3>
+        <NuxtImg v-if="doc.image" :src="`/images/events/${doc.image}`" sizes="100vw md:448px" />
         <div class="my-4">
         <iframe
           class="w-full aspect-video"

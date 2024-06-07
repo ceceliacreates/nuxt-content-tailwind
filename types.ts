@@ -12,7 +12,7 @@ export interface Blog extends MarkdownParsedContent {
   title: string;
   description: string;
   date: string;
-  img?: string;
+  image?: string;
   tags: string[];
   externalUrl?: string;
 }
@@ -23,7 +23,7 @@ export interface Event extends MarkdownParsedContent {
   date: string;
   description: string;
   url: string;
-  img?: string;
+  image?: string;
   embed?: string;
   video?: string;
   slides?: string;

@@ -23,7 +23,7 @@ const props = defineProps<{
       <button class="bg-blue text-white px-2 mr-2 my-2 rounded" v-for="tag in item.tags" :key="item.slug + tag" @click="$emit('updateSelectedTag', tag)"> {{tag}}</button>
     </div>
     <NuxtLink :to="item.externalUrl || item._path" :target="item.externalUrl ? '_blank' : null">
-      <NuxtImg v-if="item.image" :src="`/images/${section}/${item.image}`" sizes="100vw md:448px" />
+      <NuxtImg class="mb-2 rounded mx-auto" v-if="item.image && section === 'blog'" :src="`/images/${section}/${item.image}`" sizes="100vw md:448px" />
       <p v-show="section === 'blog' && item.description">{{ item.description }}</p>
       <p class="text-purple font-light" v-if="item.externalUrl"> View Post
         <Icon name="heroicons-outline:external-link" size="1rem"  />
