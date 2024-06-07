@@ -11,7 +11,12 @@ const props = defineProps<{
   <div class="my-4 border-b py-2">
     <NuxtLink :to="item.externalUrl || item._path" :target="item.externalUrl ? '_blank' : null">
       <h3 class="font-bold text-xl">{{ section === 'events' ? item.event : item.title }}</h3>
-      <p v-show="item.date">{{ new Date(item.date).toLocaleDateString() }}</p>
+      <p v-show="item.date">{{ new Date(item.date).toLocaleDateString('en-US', {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }) }}</p>
       <p v-show="section === 'events' && item.title" class="italic text-lg">"{{ item.title }}"</p>
     </NuxtLink>
     <div v-show="item.tags">

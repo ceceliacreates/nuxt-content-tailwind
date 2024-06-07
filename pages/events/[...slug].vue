@@ -2,7 +2,12 @@
     <main>
       <ContentDoc v-slot="{ doc }">
         <h1 class="text-2xl sm:text-3xl my-4">{{ doc.event }}</h1>
-        <p>{{ new Date(doc.date).toLocaleDateString() }} (<NuxtLink class="text-blue" :to="doc.url" v-show="doc.url" target="blank" external><Icon name="heroicons-outline:external-link" size="1rem" /> More Details</NuxtLink>)</p>
+        <p>{{ new Date(doc.date).toLocaleDateString('en-US', {
+    timeZone: 'UTC',
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  }) }} (<NuxtLink class="text-blue" :to="doc.url" v-show="doc.url" target="blank" external><Icon name="heroicons-outline:external-link" size="1rem" /> More Details</NuxtLink>)</p>
         <h3 class="text-lg italic my-2">"{{  doc.title }}"</h3>
         <div class="my-4">
         <iframe

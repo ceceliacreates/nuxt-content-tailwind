@@ -39,15 +39,7 @@ const loadMoreEvents = () => {
 
   maxEvents.value += 5;
 
-  console.log(atEnd.value)
-console.log(pastEvents.value.length)
-console.log(maxEvents.value)
-
 }
-
-console.log(atEnd.value)
-console.log(pastEvents.value.length)
-console.log(maxEvents.value)
 </script>
 
 <template>
