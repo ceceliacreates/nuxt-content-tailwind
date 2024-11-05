@@ -9,6 +9,6 @@ img:
 embed: F8autp2YNbw
 video: 
 slides: https://docs.google.com/presentation/d/e/2PACX-1vSb1Ql6yzlq50N_qO1CMammbCARLWr_ViRqxFExtGb-MgnzG4-N8GtnXY52Qv9rw5e_Kvd34TD4yfmy/pub
-tags: ["mobile", "cicd", "devops"]
+tags: ["mobile", "cicd", "devops", video]
 ---
 event

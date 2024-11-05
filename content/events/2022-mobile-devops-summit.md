@@ -7,7 +7,7 @@ description: Traditional CI/CD doesn’t even begin to cover the specific needs 
 url: https://www.mobiledevops.io/summit/agenda/session/1023764
 img:
 embed: NUG8sF5IALM
-video: https://www.youtube.com/watch?v=NUG8sF5IALM
-tags: ["mobile", "devops", "cicd"]
+video: 
+tags: ["mobile", "devops", "cicd", video]
 ---
 event

@@ -9,6 +9,6 @@ img:
 embed: _KD10cx9H90
 video:
 slides: https://slides.com/ceceliamartinez/no-code-oss-contributions
-tags: ["oss", "community", "diversity"]
+tags: ["oss", "community", "diversity", video]
 ---
 event

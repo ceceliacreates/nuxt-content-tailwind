@@ -8,6 +8,6 @@ img:
 embed: UIu4Bet3b_Y?si=nwCbhQzTywiSVs7v&t=14391
 video: 
 slides: https://docs.google.com/presentation/d/e/2PACX-1vTpl7N4K4oycm-0LAgIlwyDNRPwC-6yIB5T8q0AwTlNVM0c42C_r3d5IxQQQjS6e7X0I1FSf3Xq5bAG/pub?start=false&loop=false&delayms=60000
-tags: ["devops", "ai"]
+tags: [devops, ai, video]
 ---
 event

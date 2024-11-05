@@ -7,7 +7,7 @@ url: https://www.techorama.nl/
 image: 
 embed: 
 video: 
-slides: 
+slides: https://bit.ly/techoramaNL-lowcode
 tags: ['low-code']
 ---
 event

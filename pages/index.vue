@@ -37,7 +37,7 @@ const socialLinks: SocialLink[] = [
 <template>
     <main>
         <h1 class="text-center font-light text-4xl sm:text-6xl md:text-7xl mb-2">Cecelia Martinez</h1>
-        <h3 class="italic text-center font-light text-lg sm:text-2xl text-blue">Code, Content & Community</h3>
+        <h3 class="italic text-center font-light text-lg sm:text-2xl text-blue">Code, Content, & Community</h3>
         <NuxtImg class="mx-auto" src="/images/logo-512x512.png" sizes="80vw lg:500px" />
         <div class="flex justify-center gap-2 text-blue">
           <NuxtLink v-for="link in socialLinks" :to="link.url" external :key="link.name" target="_blank">

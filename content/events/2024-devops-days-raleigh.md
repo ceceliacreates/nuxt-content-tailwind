@@ -8,6 +8,6 @@ img:
 embed: j6aB9iUuWb4
 video: 
 slides: 
-tags: ["devops", "ai"]
+tags: ["devops", "ai", video]
 ---
 event

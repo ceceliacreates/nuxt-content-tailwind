@@ -7,7 +7,7 @@ url: https://www.kcdc.info
 img: 
 embed: 
 video: 
-slides: 
+slides: https://bit.ly/kcdc-low-code-landscape
 tags: ['low-code']
 ---
 event

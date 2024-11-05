@@ -9,6 +9,6 @@ img:
 embed: 7C1ycDhrKPc
 video:
 slides: https://slides.com/ceceliamartinez/debugging-with-js-frameworks
-tags: ["debugging", "react", "vue"]
+tags: ["debugging", "react", "vue", video]
 ---
 event

@@ -9,6 +9,6 @@ img:
 embed: 8QaRKXJYxpI
 video:
 slides: https://slides.com/ceceliamartinez/time-travel-debugging
-tags: ["debugging"]
+tags: ["debugging", video]
 ---
 event

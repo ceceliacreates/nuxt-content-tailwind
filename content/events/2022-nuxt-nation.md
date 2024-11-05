@@ -8,6 +8,6 @@ url: https://nuxtnation.com/
 img: /nuxt-nation-2022.jpg
 embed: eC9xkMVm8_U
 video: https://www.youtube.com/watch?v=eC9xkMVm8_U
-tags: ["nuxt", "ionic", "mobile"]
+tags: ["nuxt", "ionic", "mobile", video]
 ---
 event

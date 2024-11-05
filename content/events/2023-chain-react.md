@@ -9,6 +9,6 @@ img:
 embed: uiu_hqXoHpA
 video: 
 slides: https://www.canva.com/design/DAFii9v57Ts/2zAfmX8T1jKxzSPrdqZuUA/view?utm_content=DAFii9v57Ts&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink
-tags: ["react native", "mobile"]
+tags: ["react native", "mobile", video]
 ---
 event
